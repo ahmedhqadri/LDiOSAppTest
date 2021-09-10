@@ -17,7 +17,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var banner: UIImageView!
     
     let config = LDConfig(mobileKey: "mob-d41e8efe-c801-4857-a3f6-16011cf3eac0")
-    let user = LDUser(key: "test12345")
+    let user = LDUser(key: "LDTestUseriOS")
     
 
     override func viewDidLoad() {
@@ -48,16 +48,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
             self.banner.isHidden = false;
         }
         else {
-            
             self.banner.isHidden = true;
         }
         
     }
     
     @IBAction func submitButton(_ sender: Any) {
+        
         nameTextField.text = ""
         companyTextField.text = ""
         contactTextField.text = ""
+        checkFlags()
     }
     
 
