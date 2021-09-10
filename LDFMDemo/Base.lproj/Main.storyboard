@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LDFMDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="social_logo.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="UEo-B0-SBF">
+                                <rect key="frame" x="0.0" y="-5" width="414" height="233"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="233" id="jPv-y5-xfU"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RlI-8Q-Qjt">
+                                <rect key="frame" x="93" y="335" width="228" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Company" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UaQ-Jz-oQ1">
+                                <rect key="frame" x="93" y="431" width="228" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tgg-yc-AJD">
+                                <rect key="frame" x="0.0" y="712" width="414" height="184"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="184" id="OUZ-Er-jC2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="50"/>
+                                <state key="normal" title="SUBMIT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZfP-0P-NCl"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contact Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vXO-Ka-NOp">
+                                <rect key="frame" x="93" y="383" width="228" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RlI-8Q-Qjt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="0H2-w0-syp"/>
+                            <constraint firstItem="UEo-B0-SBF" firstAttribute="trailing" secondItem="Tgg-yc-AJD" secondAttribute="trailing" id="1US-Lo-88p"/>
+                            <constraint firstItem="UEo-B0-SBF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-49" id="29Y-Sb-EFT"/>
+                            <constraint firstItem="vXO-Ka-NOp" firstAttribute="top" secondItem="RlI-8Q-Qjt" secondAttribute="bottom" constant="14" id="3qS-Cg-Hdg"/>
+                            <constraint firstItem="UaQ-Jz-oQ1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9Ra-J7-IDc"/>
+                            <constraint firstItem="RlI-8Q-Qjt" firstAttribute="trailing" secondItem="vXO-Ka-NOp" secondAttribute="trailing" id="D6N-mJ-nPL"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Tgg-yc-AJD" secondAttribute="bottom" constant="-34" id="DAJ-nK-5El"/>
+                            <constraint firstItem="UEo-B0-SBF" firstAttribute="leading" secondItem="Tgg-yc-AJD" secondAttribute="leading" id="Hgj-12-NHX"/>
+                            <constraint firstItem="UaQ-Jz-oQ1" firstAttribute="top" secondItem="vXO-Ka-NOp" secondAttribute="bottom" constant="14" id="WmD-2x-p4W"/>
+                            <constraint firstItem="UEo-B0-SBF" firstAttribute="centerX" secondItem="RlI-8Q-Qjt" secondAttribute="centerX" id="aHy-qm-WGU"/>
+                            <constraint firstItem="vXO-Ka-NOp" firstAttribute="leading" secondItem="UaQ-Jz-oQ1" secondAttribute="leading" id="iLf-Tg-r9w"/>
+                            <constraint firstItem="RlI-8Q-Qjt" firstAttribute="leading" secondItem="vXO-Ka-NOp" secondAttribute="leading" id="iUD-a5-UDk"/>
+                            <constraint firstItem="Tgg-yc-AJD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rbC-hV-Yis"/>
+                            <constraint firstItem="vXO-Ka-NOp" firstAttribute="trailing" secondItem="UaQ-Jz-oQ1" secondAttribute="trailing" id="s2g-xB-QKe"/>
+                            <constraint firstItem="RlI-8Q-Qjt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vb4-y1-Mgl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="banner" destination="UEo-B0-SBF" id="lLd-xI-v8w"/>
+                        <outlet property="companyTextField" destination="UaQ-Jz-oQ1" id="Vt1-jP-veL"/>
+                        <outlet property="contactTextField" destination="vXO-Ka-NOp" id="aG1-Uu-Ylz"/>
+                        <outlet property="nameTextField" destination="RlI-8Q-Qjt" id="Ldh-04-9Pb"/>
+                        <outlet property="submitButton" destination="Tgg-yc-AJD" id="tSL-Fq-eLw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="social_logo.jpeg" width="1920" height="1080"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
