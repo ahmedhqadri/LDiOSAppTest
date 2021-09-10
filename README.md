@@ -1,4 +1,4 @@
-# LDiOSAppTest
+# Launch Darkly Feature Management Test iOS
 Testing Feature Management in Launch Darkly
 
 ## Summary
